@@ -1,13 +1,13 @@
 {
 	"info": {
-		"_postman_id": "421339d5-8fb8-4884-bc43-c87a9f6985ca",
-		"name": "Zinger Framework",
-		"description": "# Overview\nZinger is an open source framework for building hyperlocal delivery\nmobile and web applications.\n\nIt provides developers easy to handle backend for ordering & delivering foods, groceries, fruits, vegetables, medicines, etc.\n\nFor more info, visit: https://zinger.pw\n\n# Zinger Architecture\n![alt text](https://github.com/ddlogesh/zinger-framework-docs/blob/master/website/static/img/zinger/zinger-arch.png?raw=true \"Zinger Architecture\")",
+		"_postman_id": "56745f79-73fb-4d0e-9d8e-4627c5fc16c8",
+		"name": "Zinger framework",
+		"description": "# Overview\nZinger is an open source framework for building hyperlocal delivery\nmobile and web applications.\n\nIt provides developers easy to handle backend for ordering & delivering foods, groceries, fruits, vegetables, medicines, etc.\n\nFor more info, visit: https://zinger.tech\n\n# Zinger Architecture\n![alt text](https://github.com/ddlogesh/zinger-framework-docs/blob/master/website/static/img/zinger/zinger-arch.png?raw=true \"Zinger Architecture\")",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "User",
+			"name": "User API",
 			"item": [
 				{
 					"name": "Login/Register client",
@@ -23,7 +23,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobile\": \"9176786582\",\n    \"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\"\n}",
+							"raw": "{\n    \"mobile\": \"9330373008\",\n    \"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -45,7 +45,7 @@
 					},
 					"response": [
 						{
-							"name": "LOGIN",
+							"name": "SIGN UP",
 							"originalRequest": {
 								"method": "POST",
 								"header": [
@@ -58,7 +58,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"mobile\": \"9176786582\",\n    \"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\"\n}",
+									"raw": "{\n    \"mobile\": \"9330373008\",\n    \"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -80,30 +80,9 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "Content-Length",
-									"value": "358"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 06 May 2020 08:08:08 GMT"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=60"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								}
-							],
+							"header": null,
 							"cookie": [],
-							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": {\n        \"userModel\": {\n            \"id\": 4,\n            \"mobile\": null,\n            \"name\": \"John Doe\",\n            \"email\": \"johndoe@gmail.com\",\n            \"oauthId\": null,\n            \"notificationToken\":null,\n            \"role\": \"CUSTOMER\"\n        },\n        \"placeModel\": {\n            \"id\": 1,\n            \"name\": \"Zinger IT Park\",\n            \"iconUrl\": \"https://bit.ly/2W8yHrB\",\n            \"address\": \"Kelambakkam\"\n        }\n    }\n}"
+							"body": "{\n    \"code\": 1163,\n    \"message\": \"Place detail not available\",\n    \"data\": {\n        \"userModel\": {\n            \"id\": 4,\n            \"mobile\": null,\n            \"name\": null,\n            \"email\": null,\n            \"oauthId\": null,\n            \"notificationToken\": null,\n            \"role\": \"CUSTOMER\"\n        },\n        \"placeModel\": null\n    }\n}"
 						},
 						{
 							"name": "BLOCKED USER",
@@ -119,7 +98,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"mobile\": \"9176019334\",\n    \"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\"\n}",
+									"raw": "{\n    \"mobile\": \"9330373008\",\n    \"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -167,7 +146,7 @@
 							"body": "{\n    \"code\": 1151,\n    \"message\": \"User has been blocked\",\n    \"data\": null\n}"
 						},
 						{
-							"name": "SIGN UP",
+							"name": "LOGIN",
 							"originalRequest": {
 								"method": "POST",
 								"header": [
@@ -180,7 +159,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"mobile\": \"9176786587\",\n    \"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\"\n}",
+									"raw": "{\n    \"mobile\": \"9330373008\",\n    \"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -202,9 +181,30 @@
 							"status": "OK",
 							"code": 200,
 							"_postman_previewlanguage": "json",
-							"header": [],
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "358"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 May 2020 08:08:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
 							"cookie": [],
-							"body": "{\n    \"code\": 1163,\n    \"message\": \"Place detail not available\",\n    \"data\": {\n        \"userModel\": {\n            \"id\": 4,\n            \"mobile\": null,\n            \"name\": null,\n            \"email\": null,\n            \"oauthId\": null,\n            \"notificationToken\": null,\n            \"role\": \"CUSTOMER\"\n        },\n        \"placeModel\": null\n    }\n}"
+							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": {\n        \"userModel\": {\n            \"id\": 4,\n            \"mobile\": null,\n            \"name\": \"John Doe\",\n            \"email\": \"johndoe@gmail.com\",\n            \"oauthId\": null,\n            \"notificationToken\":null,\n            \"role\": \"CUSTOMER\"\n        },\n        \"placeModel\": {\n            \"id\": 1,\n            \"name\": \"Zinger IT Park\",\n            \"iconUrl\": \"https://bit.ly/2W8yHrB\",\n            \"address\": \"Kelambakkam\"\n        }\n    }\n}"
 						}
 					]
 				},
@@ -231,7 +231,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"userModel\":{\n\t\t\"name\": \"John Doe\",\n\t\t\"email\":\"johndoe@gmail.com\",\n\t\t\"mobile\":\"9176786582\",\n\t\t\"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\",\n\t\t\"id\":4\n\t},\n\t\"placeModel\":{\n\t\t\"id\":100\n\t}\n}",
+							"raw": "{\n\t\"userModel\":{\n\t\t\"name\": \"John Doe\",\n\t\t\"email\":\"johndoe@gmail.com\",\n\t\t\"mobile\":\"9330373008\",\n\t\t\"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\",\n\t\t\"id\":4\n\t},\n\t\"placeModel\":{\n\t\t\"id\":100\n\t}\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -345,7 +345,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"userModel\":{\n\t\t\"name\": \"John Doe\",\n\t\t\"email\":\"johndoe@gmail.com\",\n\t\t\"mobile\":\"9176786582\",\n\t\t\"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\",\n\t\t\"id\":4\n\t},\n\t\"placeModel\":{\n\t\t\"id\":100\n\t}\n}",
+									"raw": "{\n\t\"userModel\":{\n\t\t\"name\": \"John Doe\",\n\t\t\"email\":\"johndoe@gmail.com\",\n\t\t\"mobile\":\"9330373008\",\n\t\t\"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\",\n\t\t\"id\":4\n\t},\n\t\"placeModel\":{\n\t\t\"id\":100\n\t}\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -423,7 +423,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"John Cena\",\n\t\"email\":\"johncena@gmail.com\",\n\t\"mobile\":\"9176019346\",\n\t\"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\",\n\t\"id\": 5\n}",
+							"raw": "{\n\t\"name\": \"John Cena\",\n\t\"email\":\"johncena@gmail.com\",\n\t\"mobile\":\"9330373008\",\n\t\"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\",\n\t\"id\": 5\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -472,7 +472,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"name\": \"John\",\n\t\"email\":\"john@gmail.com\",\n\t\"mobile\":\"9176019335\",\n\t\"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\",\n\t\"id\": 4\n}",
+									"raw": "{\n\t\"name\": \"John\",\n\t\"email\":\"john@gmail.com\",\n\t\"mobile\":\"9330373008\",\n\t\"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\",\n\t\"id\": 4\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -738,7 +738,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobile\": \"9176019834\",\n    \"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\"\n}",
+							"raw": "{\n    \"mobile\": \"9330373008\",\n    \"oauthId\": \"6rqnIMdy3DSXPnmhvBwtUNh4sFj1\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -761,68 +761,6 @@
 					},
 					"response": [
 						{
-							"name": "LOGIN  SUCCESS",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"mobile\": \"9176019334\",\n    \"oauthId\": \"7rqnIMdy3DSXPnmhvBwtUNh4sFj2\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:8080/user/seller",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"user",
-										"seller"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "Content-Length",
-									"value": "608"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 06 May 2020 09:01:10 GMT"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=60"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": {\n        \"userModel\": {\n            \"id\": 2,\n            \"mobile\": 9176019445,\n            \"name\": \"John Connors\",\n            \"email\": \"johnconnors@gmail.com\",\n            \"oauthId\": null,\n            \"notificationToken\": null,\n            \"role\": \"SHOP_OWNER\"\n        },\n        \"shopModelList\": [\n            {\n                \"shopModel\": {\n                    \"id\": 1,\n                    \"name\": \"Hotel transylvania\",\n                    \"photoUrl\": \"https://bit.ly/2W8yHrB\",\n                    \"coverUrls\": [\n                        \"https://bit.ly/2zfjZWV\",\n                        \"https://bit.ly/35C7aBT\",\n                        \"https://bit.ly/35DR9eE\"\n                    ],\n                    \"mobile\": \"9176019344\",\n                    \"placeModel\": null,\n                    \"openingTime\": \"09:00:00\",\n                    \"closingTime\": \"21:00:00\"\n                },\n                \"ratingModel\": {\n                    \"shopModel\": null,\n                    \"rating\": 4.3,\n                    \"userCount\": 20\n                },\n                \"configurationModel\": {\n                    \"shopModel\": null,\n                    \"merchantId\": \"MID\",\n                    \"deliveryPrice\": 15.0,\n                    \"isDeliveryAvailable\": 1,\n                    \"isOrderTaken\": 1\n                }\n            }\n        ]\n    }\n}"
-						},
-						{
 							"name": "LOGIN FAILURE",
 							"originalRequest": {
 								"method": "POST",
@@ -836,7 +774,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"mobile\": \"9176019457\",\n    \"oauthId\": \"7rqnIMdy3DSXPnmhvBwtUNh4sFj2\"\n}",
+									"raw": "{\n    \"mobile\": \"9330373008\",\n    \"oauthId\": \"7rqnIMdy3DSXPnmhvBwtUNh4sFj2\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -883,6 +821,68 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"code\": 1155,\n    \"message\": \"User detail not available\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "LOGIN  SUCCESS",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"mobile\": \"9330373008\",\n    \"oauthId\": \"7rqnIMdy3DSXPnmhvBwtUNh4sFj2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/user/seller",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"seller"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "608"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 May 2020 09:01:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": {\n        \"userModel\": {\n            \"id\": 2,\n            \"mobile\": 9330373008,\n            \"name\": \"John Connors\",\n            \"email\": \"johnconnors@gmail.com\",\n            \"oauthId\": null,\n            \"notificationToken\": null,\n            \"role\": \"SHOP_OWNER\"\n        },\n        \"shopModelList\": [\n            {\n                \"shopModel\": {\n                    \"id\": 1,\n                    \"name\": \"Hotel transylvania\",\n                    \"photoUrl\": \"https://bit.ly/2W8yHrB\",\n                    \"coverUrls\": [\n                        \"https://bit.ly/2zfjZWV\",\n                        \"https://bit.ly/35C7aBT\",\n                        \"https://bit.ly/35DR9eE\"\n                    ],\n                    \"mobile\": \"9176019344\",\n                    \"placeModel\": null,\n                    \"openingTime\": \"09:00:00\",\n                    \"closingTime\": \"21:00:00\"\n                },\n                \"ratingModel\": {\n                    \"shopModel\": null,\n                    \"rating\": 4.3,\n                    \"userCount\": 20\n                },\n                \"configurationModel\": {\n                    \"shopModel\": null,\n                    \"merchantId\": \"MID\",\n                    \"deliveryPrice\": 15.0,\n                    \"isDeliveryAvailable\": 1,\n                    \"isOrderTaken\": 1\n                }\n            }\n        ]\n    }\n}"
 						}
 					]
 				}
@@ -892,6 +892,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
+						"id": "21260251-3a28-428a-ab51-bde0948c63f3",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -901,16 +902,18 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "4867a4a2-38ff-4b15-8afa-dc1b1072eced",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "Shop",
+			"name": "Shop API ",
 			"item": [
 				{
 					"name": "Get shops in a place",
@@ -1588,29 +1591,10 @@
 				}
 			],
 			"description": "Shop API allows you to fetch and update shop details.\n\n**NOTE**:\n\n* merchantId - ID provided by the payment gateway.",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				}
-			]
+			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "Place",
+			"name": "Place API",
 			"item": [
 				{
 					"name": "Get all places",
@@ -1836,29 +1820,10 @@
 				}
 			],
 			"description": "Place API allows you to fetch and update the place/campus.",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				}
-			]
+			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "Item",
+			"name": "Item API",
 			"item": [
 				{
 					"name": "Get items in a shop",
@@ -1941,6 +1906,15 @@
 										"type": "text"
 									}
 								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "localhost:8080/menu/shop/1",
 									"host": [
@@ -2009,6 +1983,15 @@
 										"type": "text"
 									}
 								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "localhost:8080/menu/shop/100",
 									"host": [
@@ -2580,29 +2563,10 @@
 				}
 			],
 			"description": "Item API allows you to fetch and update items in a shop.",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				}
-			]
+			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "Order",
+			"name": "Order API",
 			"item": [
 				{
 					"name": "Verify new order",
@@ -2654,7 +2618,7 @@
 					},
 					"response": [
 						{
-							"name": "ORDER PRICE MISMATCH",
+							"name": "ITEMS NOT AVAILABLE",
 							"originalRequest": {
 								"method": "POST",
 								"header": [
@@ -2682,7 +2646,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"transactionModel\": {\n        \"orderModel\": {\n            \"userModel\": {\n                \"id\": 7\n            },\n            \"shopModel\": {\n                \"id\": 1\n            },\n            \"price\": 310,\n            \"cookingInfo\": \"Less salt\",\n            \"deliveryPrice\": 15,\n            \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\"\n        }\n    },\n    \"orderItemsList\": [\n        {\n            \"itemModel\": {\n                \"id\": 1\n            },\n            \"quantity\": 2,\n            \"price\": 150\n        },\n        {\n            \"itemModel\": {\n                \"id\": 2\n            },\n            \"quantity\": 2,\n            \"price\": 130\n        }\n    ]\n}",
+									"raw": "{\n    \"transactionModel\": {\n        \"orderModel\": {\n            \"userModel\": {\n                \"id\": 4\n            },\n            \"shopModel\": {\n                \"id\": 1\n            },\n            \"price\": 310,\n            \"cookingInfo\": \"Less salt\",\n            \"deliveryPrice\": 15,\n            \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\"\n        }\n    },\n    \"orderItemsList\": [\n        {\n            \"itemModel\": {\n                \"id\": 1\n            },\n            \"quantity\": 2,\n            \"price\": 150\n        },\n        {\n            \"itemModel\": {\n                \"id\": 2\n            },\n            \"quantity\": 2,\n            \"price\": 130\n        }\n    ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2710,11 +2674,11 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "58"
+									"value": "66"
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 06 May 2020 11:12:17 GMT"
+									"value": "Wed, 06 May 2020 11:01:56 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -2726,7 +2690,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"code\": 1300,\n    \"message\": \"Order price mismatch\",\n    \"data\": null\n}"
+							"body": "{\n    \"code\": 1296,\n    \"message\": \"Some Items are not available\",\n    \"data\": null\n}"
 						},
 						{
 							"name": "SUCCESS",
@@ -2804,7 +2768,7 @@
 							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": {\n        \"orderId\": 1,\n        \"transactionToken\": \"12Abdsfds\"\n    }\n}"
 						},
 						{
-							"name": "ITEMS NOT AVAILABLE",
+							"name": "RESTAURANT NOT ACCEPTING ORDERS",
 							"originalRequest": {
 								"method": "POST",
 								"header": [
@@ -2860,11 +2824,11 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "66"
+									"value": "69"
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 06 May 2020 11:01:56 GMT"
+									"value": "Wed, 06 May 2020 10:54:15 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -2876,7 +2840,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"code\": 1296,\n    \"message\": \"Some Items are not available\",\n    \"data\": null\n}"
+							"body": "{\n    \"code\": 1266,\n    \"message\": \"Restaurant not accepting orders\",\n    \"data\": null\n}"
 						},
 						{
 							"name": "DELIVERY NOT AVAILABLE",
@@ -2954,7 +2918,7 @@
 							"body": "{\n    \"code\": 1263,\n    \"message\": \"Delivery Option not available\",\n    \"data\": null\n}"
 						},
 						{
-							"name": "RESTAURANT NOT ACCEPTING ORDERS",
+							"name": "ORDER PRICE MISMATCH",
 							"originalRequest": {
 								"method": "POST",
 								"header": [
@@ -2982,7 +2946,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"transactionModel\": {\n        \"orderModel\": {\n            \"userModel\": {\n                \"id\": 4\n            },\n            \"shopModel\": {\n                \"id\": 1\n            },\n            \"price\": 310,\n            \"cookingInfo\": \"Less salt\",\n            \"deliveryPrice\": 15,\n            \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\"\n        }\n    },\n    \"orderItemsList\": [\n        {\n            \"itemModel\": {\n                \"id\": 1\n            },\n            \"quantity\": 2,\n            \"price\": 150\n        },\n        {\n            \"itemModel\": {\n                \"id\": 2\n            },\n            \"quantity\": 2,\n            \"price\": 130\n        }\n    ]\n}",
+									"raw": "{\n    \"transactionModel\": {\n        \"orderModel\": {\n            \"userModel\": {\n                \"id\": 7\n            },\n            \"shopModel\": {\n                \"id\": 1\n            },\n            \"price\": 310,\n            \"cookingInfo\": \"Less salt\",\n            \"deliveryPrice\": 15,\n            \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\"\n        }\n    },\n    \"orderItemsList\": [\n        {\n            \"itemModel\": {\n                \"id\": 1\n            },\n            \"quantity\": 2,\n            \"price\": 150\n        },\n        {\n            \"itemModel\": {\n                \"id\": 2\n            },\n            \"quantity\": 2,\n            \"price\": 130\n        }\n    ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3010,11 +2974,11 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "69"
+									"value": "58"
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 06 May 2020 10:54:15 GMT"
+									"value": "Wed, 06 May 2020 11:12:17 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -3026,7 +2990,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"code\": 1266,\n    \"message\": \"Restaurant not accepting orders\",\n    \"data\": null\n}"
+							"body": "{\n    \"code\": 1300,\n    \"message\": \"Order price mismatch\",\n    \"data\": null\n}"
 						}
 					]
 				},
@@ -3072,74 +3036,6 @@
 						"description": "**URL** : /order/place/{orderId}\n\n* After a successful transaction, inserts a new order for the given order id.\n* Return the response code-**1167** for invalid order id."
 					},
 					"response": [
-						{
-							"name": "FAILURE",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "oauth_id",
-										"type": "text",
-										"value": "6rqnIMdy3DSXPnmhvBwtUNh4sFj1"
-									},
-									{
-										"key": "id",
-										"type": "text",
-										"value": "4"
-									},
-									{
-										"key": "role",
-										"type": "text",
-										"value": "CUSTOMER"
-									},
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									}
-								],
-								"url": {
-									"raw": "localhost:8080/order/place/12",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"order",
-										"place",
-										"12"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "Content-Length",
-									"value": "64"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 06 May 2020 11:03:39 GMT"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=60"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"code\": 1167,\n    \"message\": \"Order detail not available\",\n    \"data\": null\n}"
-						},
 						{
 							"name": "SUCCESS",
 							"originalRequest": {
@@ -3207,6 +3103,74 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": \"Success\"\n}"
+						},
+						{
+							"name": "FAILURE",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "oauth_id",
+										"type": "text",
+										"value": "6rqnIMdy3DSXPnmhvBwtUNh4sFj1"
+									},
+									{
+										"key": "id",
+										"type": "text",
+										"value": "4"
+									},
+									{
+										"key": "role",
+										"type": "text",
+										"value": "CUSTOMER"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/order/place/12",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"order",
+										"place",
+										"12"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 May 2020 11:03:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 1167,\n    \"message\": \"Order detail not available\",\n    \"data\": null\n}"
 						}
 					]
 				},
@@ -3441,146 +3405,6 @@
 					},
 					"response": [
 						{
-							"name": "SEARCH BY NAME",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "oauth_id",
-										"type": "text",
-										"value": "7rqnIMdy3DSXPnmhvBwtUNh4sFj2"
-									},
-									{
-										"key": "id",
-										"type": "text",
-										"value": "2"
-									},
-									{
-										"key": "role",
-										"type": "text",
-										"value": "SHOP_OWNER"
-									},
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									}
-								],
-								"url": {
-									"raw": "localhost:8080/order/1/john/1/5",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"order",
-										"1",
-										"john",
-										"1",
-										"5"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "Content-Length",
-									"value": "6152"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 06 May 2020 20:07:06 GMT"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=60"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T8\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 8,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786589\",\n                        \"name\": \"John Smith\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:27:21\",\n                    \"orderStatus\": null,\n                    \"price\": 70,\n                    \"deliveryPrice\": 0,\n                    \"deliveryLocation\": null,\n                    \"cookingInfo\": \"Need Extra spoons\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"912720\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Sada Dosa\",\n                        \"price\": 35,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 70\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:27:21\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:27:28\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:30:49\",\n                    \"orderStatus\": \"READY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:31:23\",\n                    \"orderStatus\": \"COMPLETED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T5\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 5,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:08:43\",\n                    \"orderStatus\": null,\n                    \"price\": 145,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\",\n                    \"cookingInfo\": \"Need Extra spoons\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": null\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Sada Dosa\",\n                        \"price\": 35,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 70\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Idly\",\n                        \"price\": 30,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 60\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:08:43\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:05\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:16\",\n                    \"orderStatus\": \"CANCELLED_BY_SELLER\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:16\",\n                    \"orderStatus\": \"REFUND_INITIATED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T4\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 4,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:05:30\",\n                    \"orderStatus\": null,\n                    \"price\": 295,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\",\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"387238\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 150\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Noodles\",\n                        \"price\": 65,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 130\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:05:30\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:09:10\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:09:50\",\n                    \"orderStatus\": \"OUT_FOR_DELIVERY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:10:20\",\n                    \"orderStatus\": \"DELIVERED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T3\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 3,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"06/05/2020 21:38:39\",\n                    \"orderStatus\": null,\n                    \"price\": 295,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"Clock tower\",\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": null\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 150\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Noodles\",\n                        \"price\": 65,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 130\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:38:39\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:39:19\",\n                    \"orderStatus\": \"CANCELLED_BY_SELLER\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:39:19\",\n                    \"orderStatus\": \"REFUND_INITIATED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 23:10:38\",\n                    \"orderStatus\": \"REFUND_COMPLETED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T2\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 2,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"06/05/2020 16:47:02\",\n                    \"orderStatus\": null,\n                    \"price\": 124,\n                    \"deliveryPrice\": 0,\n                    \"deliveryLocation\": null,\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"779516\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 124\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:47:02\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:48:14\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:50:26\",\n                    \"orderStatus\": \"READY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:53:45\",\n                    \"orderStatus\": \"COMPLETED\"\n                }\n            ]\n        }\n    ]\n}"
-						},
-						{
-							"name": "SEARCH BY PHONE",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "oauth_id",
-										"type": "text",
-										"value": "7rqnIMdy3DSXPnmhvBwtUNh4sFj2"
-									},
-									{
-										"key": "id",
-										"type": "text",
-										"value": "2"
-									},
-									{
-										"key": "role",
-										"type": "text",
-										"value": "SHOP_OWNER"
-									},
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									}
-								],
-								"url": {
-									"raw": "localhost:8080/order/1/9176/1/5",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"order",
-										"1",
-										"9176",
-										"1",
-										"5"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "Content-Length",
-									"value": "6152"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 06 May 2020 20:08:06 GMT"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=60"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T8\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 8,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786589\",\n                        \"name\": \"John Smith\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:27:21\",\n                    \"orderStatus\": null,\n                    \"price\": 70,\n                    \"deliveryPrice\": 0,\n                    \"deliveryLocation\": null,\n                    \"cookingInfo\": \"Need Extra spoons\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"912720\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Sada Dosa\",\n                        \"price\": 35,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 70\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:27:21\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:27:28\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:30:49\",\n                    \"orderStatus\": \"READY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:31:23\",\n                    \"orderStatus\": \"COMPLETED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T5\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 5,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:08:43\",\n                    \"orderStatus\": null,\n                    \"price\": 145,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\",\n                    \"cookingInfo\": \"Need Extra spoons\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": null\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Sada Dosa\",\n                        \"price\": 35,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 70\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Idly\",\n                        \"price\": 30,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 60\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:08:43\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:05\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:16\",\n                    \"orderStatus\": \"CANCELLED_BY_SELLER\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:16\",\n                    \"orderStatus\": \"REFUND_INITIATED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T4\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 4,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:05:30\",\n                    \"orderStatus\": null,\n                    \"price\": 295,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\",\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"387238\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 150\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Noodles\",\n                        \"price\": 65,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 130\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:05:30\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:09:10\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:09:50\",\n                    \"orderStatus\": \"OUT_FOR_DELIVERY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:10:20\",\n                    \"orderStatus\": \"DELIVERED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T3\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 3,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"06/05/2020 21:38:39\",\n                    \"orderStatus\": null,\n                    \"price\": 295,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"Clock tower\",\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": null\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 150\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Noodles\",\n                        \"price\": 65,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 130\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:38:39\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:39:19\",\n                    \"orderStatus\": \"CANCELLED_BY_SELLER\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:39:19\",\n                    \"orderStatus\": \"REFUND_INITIATED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 23:10:38\",\n                    \"orderStatus\": \"REFUND_COMPLETED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T2\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 2,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"06/05/2020 16:47:02\",\n                    \"orderStatus\": null,\n                    \"price\": 124,\n                    \"deliveryPrice\": 0,\n                    \"deliveryLocation\": null,\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"779516\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 124\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:47:02\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:48:14\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:50:26\",\n                    \"orderStatus\": \"READY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:53:45\",\n                    \"orderStatus\": \"COMPLETED\"\n                }\n            ]\n        }\n    ]\n}"
-						},
-						{
 							"name": "EMPTY",
 							"originalRequest": {
 								"method": "GET",
@@ -3719,6 +3543,146 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T3\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 3,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"06/05/2020 21:38:39\",\n                    \"orderStatus\": null,\n                    \"price\": 295,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"Clock tower\",\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": null\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 150\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Noodles\",\n                        \"price\": 65,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 130\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:38:39\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:39:19\",\n                    \"orderStatus\": \"CANCELLED_BY_SELLER\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:39:19\",\n                    \"orderStatus\": \"REFUND_INITIATED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 23:10:38\",\n                    \"orderStatus\": \"REFUND_COMPLETED\"\n                }\n            ]\n        }\n    ]\n}"
+						},
+						{
+							"name": "SEARCH BY NAME",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "oauth_id",
+										"type": "text",
+										"value": "7rqnIMdy3DSXPnmhvBwtUNh4sFj2"
+									},
+									{
+										"key": "id",
+										"type": "text",
+										"value": "2"
+									},
+									{
+										"key": "role",
+										"type": "text",
+										"value": "SHOP_OWNER"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/order/1/john/1/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"order",
+										"1",
+										"john",
+										"1",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "6152"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 May 2020 20:07:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T8\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 8,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786589\",\n                        \"name\": \"John Smith\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:27:21\",\n                    \"orderStatus\": null,\n                    \"price\": 70,\n                    \"deliveryPrice\": 0,\n                    \"deliveryLocation\": null,\n                    \"cookingInfo\": \"Need Extra spoons\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"912720\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Sada Dosa\",\n                        \"price\": 35,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 70\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:27:21\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:27:28\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:30:49\",\n                    \"orderStatus\": \"READY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:31:23\",\n                    \"orderStatus\": \"COMPLETED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T5\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 5,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:08:43\",\n                    \"orderStatus\": null,\n                    \"price\": 145,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\",\n                    \"cookingInfo\": \"Need Extra spoons\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": null\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Sada Dosa\",\n                        \"price\": 35,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 70\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Idly\",\n                        \"price\": 30,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 60\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:08:43\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:05\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:16\",\n                    \"orderStatus\": \"CANCELLED_BY_SELLER\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:16\",\n                    \"orderStatus\": \"REFUND_INITIATED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T4\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 4,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:05:30\",\n                    \"orderStatus\": null,\n                    \"price\": 295,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\",\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"387238\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 150\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Noodles\",\n                        \"price\": 65,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 130\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:05:30\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:09:10\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:09:50\",\n                    \"orderStatus\": \"OUT_FOR_DELIVERY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:10:20\",\n                    \"orderStatus\": \"DELIVERED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T3\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 3,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"06/05/2020 21:38:39\",\n                    \"orderStatus\": null,\n                    \"price\": 295,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"Clock tower\",\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": null\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 150\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Noodles\",\n                        \"price\": 65,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 130\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:38:39\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:39:19\",\n                    \"orderStatus\": \"CANCELLED_BY_SELLER\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:39:19\",\n                    \"orderStatus\": \"REFUND_INITIATED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 23:10:38\",\n                    \"orderStatus\": \"REFUND_COMPLETED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T2\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 2,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"06/05/2020 16:47:02\",\n                    \"orderStatus\": null,\n                    \"price\": 124,\n                    \"deliveryPrice\": 0,\n                    \"deliveryLocation\": null,\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"779516\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 124\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:47:02\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:48:14\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:50:26\",\n                    \"orderStatus\": \"READY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:53:45\",\n                    \"orderStatus\": \"COMPLETED\"\n                }\n            ]\n        }\n    ]\n}"
+						},
+						{
+							"name": "SEARCH BY PHONE",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "oauth_id",
+										"type": "text",
+										"value": "7rqnIMdy3DSXPnmhvBwtUNh4sFj2"
+									},
+									{
+										"key": "id",
+										"type": "text",
+										"value": "2"
+									},
+									{
+										"key": "role",
+										"type": "text",
+										"value": "SHOP_OWNER"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/order/1/9176/1/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"order",
+										"1",
+										"9176",
+										"1",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "6152"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 May 2020 20:08:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T8\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 8,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786589\",\n                        \"name\": \"John Smith\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:27:21\",\n                    \"orderStatus\": null,\n                    \"price\": 70,\n                    \"deliveryPrice\": 0,\n                    \"deliveryLocation\": null,\n                    \"cookingInfo\": \"Need Extra spoons\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"912720\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Sada Dosa\",\n                        \"price\": 35,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 70\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:27:21\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:27:28\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:30:49\",\n                    \"orderStatus\": \"READY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:31:23\",\n                    \"orderStatus\": \"COMPLETED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T5\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 5,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:08:43\",\n                    \"orderStatus\": null,\n                    \"price\": 145,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\",\n                    \"cookingInfo\": \"Need Extra spoons\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": null\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Sada Dosa\",\n                        \"price\": 35,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 70\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Idly\",\n                        \"price\": 30,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 1,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 60\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:08:43\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:05\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:16\",\n                    \"orderStatus\": \"CANCELLED_BY_SELLER\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:11:16\",\n                    \"orderStatus\": \"REFUND_INITIATED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T4\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 4,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"07/05/2020 01:05:30\",\n                    \"orderStatus\": null,\n                    \"price\": 295,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"No.38,Arcot Road,Chennai-64\",\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"387238\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 150\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Noodles\",\n                        \"price\": 65,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 130\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:05:30\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:09:10\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:09:50\",\n                    \"orderStatus\": \"OUT_FOR_DELIVERY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"07/05/2020 01:10:20\",\n                    \"orderStatus\": \"DELIVERED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T3\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 3,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"06/05/2020 21:38:39\",\n                    \"orderStatus\": null,\n                    \"price\": 295,\n                    \"deliveryPrice\": 15,\n                    \"deliveryLocation\": \"Clock tower\",\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": null\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 150\n                },\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Noodles\",\n                        \"price\": 65,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 130\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:38:39\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:39:19\",\n                    \"orderStatus\": \"CANCELLED_BY_SELLER\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 21:39:19\",\n                    \"orderStatus\": \"REFUND_INITIATED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 23:10:38\",\n                    \"orderStatus\": \"REFUND_COMPLETED\"\n                }\n            ]\n        },\n        {\n            \"transactionModel\": {\n                \"transactionId\": \"T2\",\n                \"bankTransactionId\": null,\n                \"currency\": null,\n                \"responseCode\": null,\n                \"responseMessage\": null,\n                \"gatewayName\": null,\n                \"bankName\": null,\n                \"paymentMode\": \"UPI\",\n                \"checksumHash\": null,\n                \"orderModel\": {\n                    \"id\": 2,\n                    \"userModel\": {\n                        \"id\": null,\n                        \"mobile\": \"9176786582\",\n                        \"name\": \"John Doe\",\n                        \"email\": null,\n                        \"oauthId\": null,\n                        \"notificationToken\": null,\n                        \"role\": null\n                    },\n                    \"shopModel\": null,\n                    \"date\": \"06/05/2020 16:47:02\",\n                    \"orderStatus\": null,\n                    \"price\": 124,\n                    \"deliveryPrice\": 0,\n                    \"deliveryLocation\": null,\n                    \"cookingInfo\": \"Less salt\",\n                    \"rating\": 0,\n                    \"feedback\": null,\n                    \"secretKey\": \"779516\"\n                }\n            },\n            \"orderItemsList\": [\n                {\n                    \"orderModel\": null,\n                    \"itemModel\": {\n                        \"id\": null,\n                        \"name\": \"Chicken Fried Kab\",\n                        \"price\": 75,\n                        \"photoUrl\": null,\n                        \"category\": null,\n                        \"shopModel\": null,\n                        \"isVeg\": 0,\n                        \"isAvailable\": null\n                    },\n                    \"quantity\": 2,\n                    \"price\": 124\n                }\n            ],\n            \"orderStatusModel\": [\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:47:02\",\n                    \"orderStatus\": \"PLACED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:48:14\",\n                    \"orderStatus\": \"ACCEPTED\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:50:26\",\n                    \"orderStatus\": \"READY\"\n                },\n                {\n                    \"orderId\": null,\n                    \"updatedTime\": \"06/05/2020 16:53:45\",\n                    \"orderStatus\": \"COMPLETED\"\n                }\n            ]\n        }\n    ]\n}"
 						}
 					]
 				},
@@ -4453,82 +4417,6 @@
 							"body": "{\n    \"code\": 1282,\n    \"message\": \"Invalid Order status\",\n    \"data\": null\n}"
 						},
 						{
-							"name": "SUCCESS",
-							"originalRequest": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "oauth_id",
-										"value": "7rqnIMdy3DSXPnmhvBwtUNh4sFj2",
-										"type": "text"
-									},
-									{
-										"key": "id",
-										"value": "2",
-										"type": "text"
-									},
-									{
-										"key": "role",
-										"value": "SHOP_OWNER",
-										"type": "text"
-									},
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n\t\"id\": 2,\n\t\"orderStatus\" : \"READY\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "localhost:8080/order/status",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"order",
-										"status"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "Content-Length",
-									"value": "47"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 06 May 2020 11:20:29 GMT"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=60"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": \"Success\"\n}"
-						},
-						{
 							"name": "INVALID SECRET KEY",
 							"originalRequest": {
 								"method": "PATCH",
@@ -4603,34 +4491,91 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"code\": 1281,\n    \"message\": \"Invalid secret key\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "SUCCESS",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "oauth_id",
+										"value": "7rqnIMdy3DSXPnmhvBwtUNh4sFj2",
+										"type": "text"
+									},
+									{
+										"key": "id",
+										"value": "2",
+										"type": "text"
+									},
+									{
+										"key": "role",
+										"value": "SHOP_OWNER",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id\": 2,\n\t\"orderStatus\" : \"READY\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/order/status",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"order",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 May 2020 11:20:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": \"Success\"\n}"
 						}
 					]
 				}
 			],
 			"description": "* Order API allows you to place, track, and fulfill the order.\n* It also allows you to fetch and search the past orders. ",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				}
-			]
+			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "Notification",
+			"name": "Notification API",
 			"item": [
 				{
 					"name": "Website URL",
@@ -4731,7 +4676,7 @@
 								}
 							},
 							"_postman_previewlanguage": "json",
-							"header": [],
+							"header": null,
 							"cookie": [],
 							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": \"Success\"\n}"
 						}
@@ -4836,7 +4781,7 @@
 								}
 							},
 							"_postman_previewlanguage": "json",
-							"header": [],
+							"header": null,
 							"cookie": [],
 							"body": "{\n    \"code\": 1,\n    \"message\": \"Success\",\n    \"data\": \"Success\"\n}"
 						}
@@ -4844,46 +4789,8 @@
 				}
 			],
 			"description": "Notification API allows you to notify the client and partner through push notification, email and SMS.",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				}
-			]
+			"protocolProfileBehavior": {}
 		}
 	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		}
-	]
+	"protocolProfileBehavior": {}
 }
