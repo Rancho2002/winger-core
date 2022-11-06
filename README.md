@@ -2,24 +2,6 @@
   Zinger - Hyperlocal Delivery Framework
 </h1>
 
-<p align="center">
-  <strong>
-    <a href="https://zinger.pw">Website</a>
-    |
-    <a href="https://zinger-workspace.slack.com/join/shared_invite/zt-e6xt0gc2-nBEy85RhEy7NZv3gWCt6Dg/">Slack</a>
-    |
-    <a href="https://discord.gg/TqADaXV">Discord</a>
-    |
-    <a href="https://stackoverflow.com/questions/tagged/zinger">StackOverflow</a>
-  </strong>
-</p>
-
-<p align="center">
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/zinger-framework/zinger-core"></a>
-  <a href="https://zinger.pw/docs/api"><img alt="Documentation" src="https://img.shields.io/badge/code-documented-brightgreen.svg?style=flat-square"></a>
-  <a href="https://github.com/zinger-framework/zinger-core/pulls"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"></a>
-</p>
-
 An Open Source Framework for building Hyperlocal Delivery Mobile and Web applications.
 Zinger provides developers easy to handle backend for ordering & delivering foods, groceries, fruits, vegetables, medicines, etc.
 
@@ -96,5 +78,5 @@ Zinger framework is completely free and made open-source. Our team is really hap
 **Every contribution is awesome and welcome!**
 
 ## Contributors
-* <a href="https://github.com/ddlogesh" target="_blank"><b>Logesh Dinakaran</b></a>
-* <a href="https://github.com/harshavardhan98" target="_blank"><b>Harshavardhan P</b></a>
+* <a href="https://www.linkedin.com/in/bindu-hite-46890a193/" target="_blank"><b>Bindu Hite</b></a>
+
