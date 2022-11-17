@@ -6,25 +6,24 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel="stylesheet" href="style.css">
-  <title></title>
+  <title>Winger-Food@Home</title>
 </head>
 <body>
   <canvas class="orb-canvas"></canvas>
   <!-- Overlay -->
-  <div class="overlay">
+  <div class="overlay" style="position: relative;">
+    <img src="./winger.jpeg" alt="" width="300" class="winger" style="position:absolute;right: 100px; border-radius: 10px;">
     <!-- Overlay inner wrapper -->
     <div class="overlay__inner">
       <!-- Title -->
       <h1 class="overlay__title">
-        Hey, would you like to learn how to create a
-        <span class="text-gradient">generative</span> UI just like this?
+        Welcome to Winger:
+        <span class="text-gradient">Food to Cold-drink...</span> order what you want!
       </h1>
       <!-- Description -->
       <p class="overlay__description">
-        In this tutorial we will be creating a generative “orb” animation
-        using pixi.js, picking some lovely random colors and pulling it all
-        together in a nice frosty UI.
-        <strong>We're gonna talk accessibility, too.</strong>
+        Winger is an application based service.<strong>We're dealing with 100+ restaurants. Your data is 100% safe to us.</strong> Click the <code style="background-color: rgb(225, 225, 225); padding: 6px; border-radius: 10px;">Download APK</code> button below, to continue.
+        <h4>Contact if you face any problem : <a href="tel:+919330373008" style="display: inline;">+91 93303 73008(Bindu)</a></h4>
       </p>
       <!-- Buttons -->
       <div class="overlay__btns">
@@ -36,6 +35,9 @@
         </button>
       </div>
     </div>
+  </div>
+  <div class="footer">
+      copyright &copy; 2022. Designed by <a href="https://linkedin.com/in/rancho2002/" style="display:inline;color:blue;">Arijit Ghosh</a>
   </div>
   <script src="script.js"></script>
   </body>
