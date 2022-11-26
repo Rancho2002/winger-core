@@ -91,7 +91,7 @@
   .winger{
     position:absolute;
     right: 100px; 
-    top: 8px;
+    top: 120px;
     border-radius: 10px;
     
   }
@@ -230,7 +230,7 @@
     }
   
     .overlay__btn:first-child {
-      margin-bottom: 6rem;
+      margin-bottom: 0rem;
     }
     /* .winger{
       display: block;
@@ -245,4 +245,10 @@
     padding: 5px;
     border-radius: 14px;
     background-color: rgb(121, 177, 225);
+}
+
+@media (max-width:1118px){
+  .winger{
+    display: none;
+  }
 }
